@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7B031C7C2B9E6CB3002617AA /* HouseSaleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B031C7B2B9E6CB3002617AA /* HouseSaleApp.swift */; };
-		7B031C7E2B9E6CB3002617AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B031C7D2B9E6CB3002617AA /* ContentView.swift */; };
 		7B031C802B9E6CB7002617AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B031C7F2B9E6CB7002617AA /* Assets.xcassets */; };
 		7B031C832B9E6CB7002617AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B031C822B9E6CB7002617AA /* Preview Assets.xcassets */; };
 		7B031C8D2B9E6CB8002617AA /* HouseSaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B031C8C2B9E6CB8002617AA /* HouseSaleTests.swift */; };
@@ -41,7 +40,6 @@
 /* Begin PBXFileReference section */
 		7B031C782B9E6CB3002617AA /* HouseSale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseSale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B031C7B2B9E6CB3002617AA /* HouseSaleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseSaleApp.swift; sourceTree = "<group>"; };
-		7B031C7D2B9E6CB3002617AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7B031C7F2B9E6CB7002617AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B031C822B9E6CB7002617AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B031C882B9E6CB8002617AA /* HouseSaleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HouseSaleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +106,6 @@
 				7B031CA62B9E6D60002617AA /* View */,
 				7B031CA52B9E6D41002617AA /* View+Model */,
 				7B031C7B2B9E6CB3002617AA /* HouseSaleApp.swift */,
-				7B031C7D2B9E6CB3002617AA /* ContentView.swift */,
 				7B031CAC2B9E7D71002617AA /* HomeApp.swift */,
 				7B031C7F2B9E6CB7002617AA /* Assets.xcassets */,
 				7B031C812B9E6CB7002617AA /* Preview Content */,
@@ -300,7 +297,6 @@
 				7B031CAD2B9E7D71002617AA /* HomeApp.swift in Sources */,
 				7B031CAB2B9E7A89002617AA /* headerComponent.swift in Sources */,
 				7B031CAF2B9E808E002617AA /* CarouselHouses.swift in Sources */,
-				7B031C7E2B9E6CB3002617AA /* ContentView.swift in Sources */,
 				7B031C7C2B9E6CB3002617AA /* HouseSaleApp.swift in Sources */,
 				7B031CA92B9E6D82002617AA /* SearchComponet.swift in Sources */,
 			);
