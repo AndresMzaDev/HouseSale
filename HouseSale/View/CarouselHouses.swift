@@ -10,12 +10,13 @@ import SwiftUI
 struct CarouselHouses: View {
     
     @State private var favoriteHouse = false
+    @State private var toggleHeart = true
+      let dataCard:HousesCards
     
     var body: some View {
         ZStack(alignment:.top ,  content: {
-            Image("house1")
+            Image(dataCard.photos+"1")
                 .resizable()
-                .aspectRatio(contentMode: .fit)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
             VStack(  content: {
                 HStack(content: {
@@ -30,19 +31,25 @@ struct CarouselHouses: View {
                         
                     }
                     ) {
-                        Image(systemName: "heart")
-                            .resizable()
-                            .foregroundStyle(.white)
-                            .padding()
-                            .frame( width: 50 , height: 50)
-                            .background(RoundedRectangle(cornerRadius: 30).fill(Color("primaryColor").opacity(0.5)))
+                        Button(action: {
+                            toggleHeart.toggle()
+                        } , label: {
+                            Image(systemName: toggleHeart ? "heart": "heart.fill")
+                                .resizable()
+                                .foregroundStyle(toggleHeart ? .white: .red)
+                                .padding()
+                                .frame( width: 50 , height: 50)
+                                .background(RoundedRectangle(cornerRadius: 30).fill(Color("primaryColor").opacity(toggleHeart ? 0.5 : 0.1)))
+                                .animation(.easeInOut(duration: 5), value: true)
+                        }).buttonStyle(ScaleButtonStyle())
+
                     }
                 })
-                .padding(.bottom, 50.0)
+                Spacer()
                 
                 VStack(alignment:.leading,    content: {
                     HStack(content: {
-                        Text("11507 Morrow ST")
+                        Text(dataCard.direction)
                            
                             
                         Spacer()
@@ -53,7 +60,7 @@ struct CarouselHouses: View {
                     .font(.title2)
                    
                     
-                    Text("Austin, TX")
+                    Text(dataCard.state)
                         .font(.caption)
                         .padding(.bottom)
                         .foregroundStyle(.gray
@@ -72,10 +79,17 @@ struct CarouselHouses: View {
             
             
         })
+        .frame(height: 300)
         
     }
 }
 
-#Preview {
-    CarouselHouses()
+struct ScaleButtonStyle  : ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label.scaleEffect(configuration.isPressed ? 2  : 1)
+    }
 }
+
+//#Preview {
+//    CarouselHouses( dataCard: <#HousesCards#>)
+//}

@@ -18,6 +18,7 @@
 		7B031CAD2B9E7D71002617AA /* HomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B031CAC2B9E7D71002617AA /* HomeApp.swift */; };
 		7B031CAF2B9E808E002617AA /* CarouselHouses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B031CAE2B9E808E002617AA /* CarouselHouses.swift */; };
 		7B031CB12B9E80C8002617AA /* dataHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B031CB02B9E80C8002617AA /* dataHouse.swift */; };
+		7B93C51D2BA63ACC0045F349 /* MapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B93C51C2BA63ACC0045F349 /* MapsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		7B031CAC2B9E7D71002617AA /* HomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeApp.swift; sourceTree = "<group>"; };
 		7B031CAE2B9E808E002617AA /* CarouselHouses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselHouses.swift; sourceTree = "<group>"; };
 		7B031CB02B9E80C8002617AA /* dataHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataHouse.swift; sourceTree = "<group>"; };
+		7B93C51C2BA63ACC0045F349 /* MapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				7B031CA82B9E6D82002617AA /* SearchComponet.swift */,
+				7B93C51C2BA63ACC0045F349 /* MapsView.swift */,
 				7B031CAE2B9E808E002617AA /* CarouselHouses.swift */,
 				7B031CAA2B9E7A89002617AA /* headerComponent.swift */,
 			);
@@ -298,6 +301,7 @@
 				7B031CAB2B9E7A89002617AA /* headerComponent.swift in Sources */,
 				7B031CAF2B9E808E002617AA /* CarouselHouses.swift in Sources */,
 				7B031C7C2B9E6CB3002617AA /* HouseSaleApp.swift in Sources */,
+				7B93C51D2BA63ACC0045F349 /* MapsView.swift in Sources */,
 				7B031CA92B9E6D82002617AA /* SearchComponet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

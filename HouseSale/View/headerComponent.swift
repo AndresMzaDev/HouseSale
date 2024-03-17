@@ -34,7 +34,7 @@ struct headerComponent: View {
             
             
         })
-        .padding()
+     
     }
 }
 
